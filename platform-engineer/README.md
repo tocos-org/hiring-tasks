@@ -12,13 +12,13 @@ Imagine we have a micro-service that returns the current balance of Tocos for a 
     - Using any of the mentioned languages (TypeScript, Java, Rust, Python), create a basic REST API that returns a fixed value for Tocos. For simplicity, the service can return a static JSON response with the current value of Tocos per user.
 
 2. **Infrastructure Setup:**
-    - Use Terraform to set up a simulated AWS infrastructure to host this service using LocalStack. This should include a mock of an EC2 instance or a Fargate task (whichever you're more comfortable with) and necessary networking components (like VPC, subnets, etc.).
+    - Use Terraform to set up a simulated AWS infrastructure to host this service using LocalStack. This should include a mock of an EC2 instance or a Fargate task (whichever you're more comfortable with) and necessary networking components (like VPC, subnets, etc.). A serverless solution is preferred but not required.
 
 3. **Containerization:**
     - Containerize the micro-service using Docker. The Dockerfile should be optimized for a small image size and should follow best practices.
 
 4. **CI/CD Setup:**
-    - Set up a basic CI/CD pipeline using Github Actions. The pipeline should:
+    - Set up a basic CI/CD pipeline using Github Actions (preferred) or another tool you are comfortable with. The pipeline should:
         - Build the micro-service.
         - Create a Docker image.
         - Push the Docker image to a container registry (e.g., Docker Hub).
